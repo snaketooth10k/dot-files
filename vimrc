@@ -5,7 +5,7 @@ call pathogen#helptags()
 syntax on
 filetype plugin indent on
 colorscheme zenburn
-
+set nu
 
 set nocompatible
 set encoding=utf-8
