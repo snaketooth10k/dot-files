@@ -4,6 +4,8 @@ call pathogen#helptags()
 
 syntax on
 filetype plugin indent on
+colorscheme zenburn
+
 
 set nocompatible
 set encoding=utf-8
@@ -39,7 +41,7 @@ let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Python with virtualenv support
-py << EOF
+python3 << EOF
 import os
 import sys
 if 'VIRTUAL_ENV' in os.environ:
