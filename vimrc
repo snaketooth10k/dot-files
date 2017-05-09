@@ -6,6 +6,7 @@ syntax on
 filetype plugin indent on
 
 set nocompatible
+set encoding=utf-8
 
 " Enable Folding
 set foldmethod=indent
@@ -23,6 +24,9 @@ au BufNewFile,BufRead *.py
 	\ set expandtab
 	\ set autoindent
 	\ set fileformat=unix
+
+" Whitespace handling
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " Set up full stack tabbing
 au BufNewFile,BufRead *.js, *.html, *.css
