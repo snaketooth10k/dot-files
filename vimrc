@@ -36,10 +36,6 @@ au BufNewFile,BufRead *.js, *.html, *.css
 	\ set softtabstop=2
 	\ set shiftwidth=2
 
-" Adding autocompletion tools
-let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
 " Python with virtualenv support
 python << EOF
 import os
