@@ -41,7 +41,7 @@ let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Python with virtualenv support
-python3 << EOF
+python << EOF
 import os
 import sys
 if 'VIRTUAL_ENV' in os.environ:
@@ -53,4 +53,5 @@ EOF
 " Python prettiness
 let python_highlight_all=1
 syntax on
+
 
