@@ -79,3 +79,6 @@ EOF
 " Ignore pyc files in nerdtree
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
+" airline config
+let g:airline_powerline_fonts = 1
+
