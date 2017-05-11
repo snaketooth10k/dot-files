@@ -60,9 +60,6 @@ au BufNewFile,BufRead *.js,*.html,*.css :
 	\ set softtabstop=2 |
 	\ set shiftwidth=2 |
 
-" Whitespace Flagging
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhiteSpace /\s\+$/
-
 " YCM code completion settings
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
