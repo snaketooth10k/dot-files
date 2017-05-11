@@ -19,6 +19,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-surround'
 Bundle 'Valloric/YouCompleteMe'
 
 " All plugins added before this line
