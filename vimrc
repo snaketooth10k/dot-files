@@ -11,11 +11,13 @@ Plugin 'gmarik/Vundle.vim'
 " Add all plugins here
 
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -45,7 +47,7 @@ nnoremap <space> za
 let g:SimpylFold_docstring_preview=1
 
 " Python tabbing
-au BufNewFile,BufRead *.py 
+au BufNewFile,BufRead *.py :
 	\ set tabstop=4 |
 	\ set softtabstop=4 |
 	\ set shiftwidth=4 |
@@ -79,4 +81,3 @@ let NERDTreeIgnore=['\.pyc$', '\~$']
 
 " airline config
 let g:airline_powerline_fonts = 1
-
