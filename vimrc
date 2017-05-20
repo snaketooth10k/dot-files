@@ -35,6 +35,7 @@ syntax on
 colorscheme zenburn
 set nu
 set laststatus=2
+DoMatchParen
 
 " Enable Folding
 set foldmethod=indent
