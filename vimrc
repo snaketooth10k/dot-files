@@ -15,13 +15,13 @@ Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
-Plugin 'jnurmine/Zenburn'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-surround'
+Plugin 'nightsense/seabird'
 Bundle 'Valloric/YouCompleteMe'
 
 " All plugins added before this line
@@ -32,9 +32,10 @@ filetype plugin indent on	" required
 set encoding=utf-8
 let python_highlight_all=1
 syntax on
-colorscheme zenburn
+colorscheme petrel
 set nu
 set laststatus=2
+runtime plugin/matchparen.vim
 DoMatchParen
 
 " Enable Folding
@@ -82,3 +83,4 @@ let NERDTreeIgnore=['\.pyc$', '\~$']
 
 " airline config
 let g:airline_powerline_fonts = 1
+let g:airline_theme='simple'
