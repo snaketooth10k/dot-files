@@ -65,7 +65,7 @@ au BufNewFile,BufRead *.js,*.html,*.css :
 	\ set shiftwidth=2 |
 
 " YCM code completion settings
-let g:ycm_server_python_interpreter=/usr/local/bin/python
+let g:ycm_server_python_interpreter='/usr/local/bin/python'
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
